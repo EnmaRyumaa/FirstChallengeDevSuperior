@@ -10,7 +10,12 @@ public class Order {
     public Order(Integer code, double basic, double discount) {
         this.code = code;
         this.basic = basic;
-        this.discount = discount;
+
+        if(discount == 0.00) {
+            this.discount = 1.00;
+        } else {
+            this.discount = discount / 100;
+        }
     }
 
     public Integer getCode() {
