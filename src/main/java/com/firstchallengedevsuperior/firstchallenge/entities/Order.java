@@ -1,9 +1,9 @@
 package com.firstchallengedevsuperior.firstchallenge.entities;
 
 public class Order {
-    public Integer code;
-    public double basic;
-    public double discount;
+    private Integer code;
+    private double basic;
+    private double discount;
 
     public Order() {}
 
